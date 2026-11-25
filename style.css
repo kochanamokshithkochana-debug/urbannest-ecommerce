@@ -1,5 +1,4 @@
 /* General Styling */
-
 * {
     margin: 0;
     padding: 0;
@@ -11,8 +10,8 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f8f7f4;
+    font-family: Arial, sans-serif;
+    background: #f8f7f4;
     color: #252525;
     line-height: 1.6;
 }
@@ -22,17 +21,11 @@ a {
     color: inherit;
 }
 
-button {
-    font-family: inherit;
-}
-
-
-/* Header and Navigation */
-
+/* Navigation */
 .header {
-    background-color: white;
+    background: white;
     padding: 20px 8%;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #eee;
 }
 
 .navbar {
@@ -47,21 +40,18 @@ button {
     color: #243b32;
 }
 
-.logo span,
-.footer-brand span {
+.logo span {
     color: #d28b53;
 }
 
 .nav-links {
     display: flex;
-    gap: 35px;
+    gap: 30px;
     list-style: none;
 }
 
 .nav-links a {
-    font-size: 15px;
-    font-weight: 600;
-    transition: color 0.3s;
+    font-weight: bold;
 }
 
 .nav-links a:hover {
@@ -69,31 +59,21 @@ button {
 }
 
 .cart {
-    margin-left: auto;
-    margin-left: 35px;
-    background-color: #243b32;
+    background: #243b32;
     color: white;
     padding: 10px 18px;
-    border-radius: 6px;
+    border-radius: 5px;
 }
 
-
 /* Hero Section */
-
 .hero {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     grid-template-areas: "copy art";
-
     align-items: center;
-
-    gap: 50px;
-
+    gap: 40px;
     padding: 70px 8%;
-
-    background-color: #eeeee7;
+    background: #e8eee8;
 }
 
 .hero-copy {
@@ -106,50 +86,41 @@ button {
 
 .eyebrow {
     color: #c27b43;
-    font-size: 13px;
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 15px;
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 46px;
     line-height: 1.2;
     color: #243b32;
     margin-bottom: 20px;
 }
 
-.hero-description {
-    font-size: 16px;
-    color: #666666;
-    margin-bottom: 30px;
+.hero-copy p {
+    margin-bottom: 20px;
 }
 
 .hero-art img {
     width: 100%;
-    height: 400px;
+    height: 380px;
     object-fit: cover;
     border-radius: 12px;
 }
 
-.primary-btn {
+.btn {
     display: inline-block;
-    background-color: #243b32;
+    background: #243b32;
     color: white;
-    padding: 14px 28px;
-    border-radius: 6px;
+    padding: 13px 25px;
+    border-radius: 5px;
     font-weight: bold;
 }
 
-.primary-btn:hover {
-    background-color: #385b4b;
-}
-
-
 /* Products Section */
-
 .products {
-    padding: 80px 8%;
+    padding: 75px 8%;
 }
 
 .section-heading {
@@ -160,91 +131,60 @@ button {
 .section-heading h2 {
     font-size: 34px;
     color: #243b32;
-    margin-bottom: 10px;
 }
-
-.section-heading p {
-    color: #777777;
-}
-
-
-/* Product Grid */
 
 .product-grid {
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
-
     gap: 25px;
 }
 
 .product-card {
-    background-color: white;
+    background: white;
+    padding-bottom: 20px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
 }
 
 .product-card img {
     width: 100%;
-    height: 220px;
+    height: 210px;
     object-fit: cover;
 }
 
-.product-info {
-    padding: 20px;
-
-    display: flex;
-    flex-direction: column;
-
-    flex: 1;
-}
-
-.product-info h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
+.product-card h3 {
+    padding: 15px 15px 5px;
     color: #243b32;
 }
 
-.product-info p {
-    font-size: 14px;
-    color: #777777;
-    margin-bottom: 12px;
+.product-card p {
+    padding: 5px 15px;
+    color: #777;
 }
 
-.product-info .price {
-    font-size: 20px;
+.product-card .price {
     color: #c27b43;
+    font-size: 20px;
     font-weight: bold;
 }
 
-.add-btn {
-    width: 100%;
-    margin-top: auto;
+.product-card button {
+    margin: 10px 15px;
+    width: calc(100% - 30px);
     padding: 12px;
+    background: #243b32;
+    color: white;
     border: none;
     border-radius: 5px;
-    background-color: #243b32;
-    color: white;
-    font-weight: bold;
     cursor: pointer;
 }
 
-.add-btn:hover {
-    background-color: #385b4b;
-}
-
-
 /* Promotional Section */
-
 .promo {
-    text-align: center;
-    background-color: #243b32;
+    background: #243b32;
     color: white;
+    text-align: center;
     padding: 65px 20px;
 }
 
@@ -254,71 +194,40 @@ button {
 }
 
 .promo p {
-    margin-bottom: 25px;
-    color: #dddddd;
+    margin-bottom: 20px;
 }
 
-.promo .eyebrow {
-    color: #e7ad78;
+.promo .btn {
+    background: #d28b53;
 }
-
-.promo-btn {
-    display: inline-block;
-    background-color: #d28b53;
-    color: white;
-    padding: 13px 30px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.promo-btn:hover {
-    background-color: #b9753e;
-}
-
 
 /* Footer */
-
 .footer {
-    background-color: #172820;
+    background: #172820;
     color: white;
-    padding: 55px 8% 20px;
+    padding: 50px 8% 20px;
 }
 
 .footer-grid {
     display: grid;
-
     grid-template-columns: 2fr 1fr 1fr;
-
     gap: 40px;
-
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
-.footer-brand h2 {
-    font-size: 26px;
+.footer-grid h3 {
     margin-bottom: 15px;
 }
 
-.footer-brand p {
-    color: #cccccc;
-    max-width: 350px;
-}
-
-.footer-column h3 {
-    margin-bottom: 15px;
-    font-size: 18px;
-}
-
-.footer-column ul {
+.footer-grid ul {
     list-style: none;
 }
 
-.footer-column li {
+.footer-grid li {
     margin-bottom: 10px;
-    color: #cccccc;
 }
 
-.footer-column a:hover {
+.footer-grid a:hover {
     color: #d28b53;
 }
 
@@ -326,6 +235,5 @@ button {
     border-top: 1px solid #46564c;
     padding-top: 20px;
     text-align: center;
-    color: #cccccc;
-    font-size: 14px;
+    color: #ccc;
 }
