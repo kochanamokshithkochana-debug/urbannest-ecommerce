@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover beautiful furniture and home decor at UrbanNest.">
-    <title>UrbanNest | Home Decor & Furniture</title>
+
+    <meta name="description" content="Discover stylish furniture and home essentials at UrbanNest.">
+
+    <title>UrbanNest | Modern Living</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind CSS Browser Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
 
-    <!-- Header and Navigation -->
+    <!-- HEADER -->
     <header class="header">
         <nav class="navbar">
-            <a href="#home" class="logo">UrbanNest<span>.</span></a>
+
+            <a href="#" class="logo">UrbanNest</a>
 
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -21,127 +30,267 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <a href="#products" class="cart">Cart (0)</a>
+            <a href="#products" class="cart">🛒 Cart</a>
+
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main>
 
-        <!-- Hero Section -->
+    <!-- MAIN CONTENT -->
+    <main id="top">
+
+        <!-- HERO SECTION -->
         <section class="hero" id="home">
+
             <div class="hero-copy">
-                <p class="eyebrow">WELCOME TO URBANNEST</p>
-                <h1>Make Your Space Beautiful</h1>
+
+                <p class="hero-label">WELCOME TO URBANNEST</p>
+
+                <h1>Make Your Home Beautiful</h1>
+
                 <p>
-                    Discover stylish furniture and home decor
-                    designed to make your home comfortable and beautiful.
+                    Discover modern furniture and stylish home essentials
+                    designed to make your everyday living comfortable.
                 </p>
-                <a href="#products" class="btn">Shop Now</a>
+
+                <a href="#products" class="hero-button">
+                    Shop Now
+                </a>
+
             </div>
 
             <div class="hero-art">
+
                 <img
                     src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900"
-                    alt="Modern living room with elegant furniture and home decor">
+                    alt="Beautiful modern living room with stylish furniture">
+
             </div>
+
         </section>
 
-        <!-- Products Section -->
+
+        <!-- PRODUCTS SECTION -->
         <section class="products" id="products">
+
             <div class="section-heading">
-                <p class="eyebrow">OUR COLLECTION</p>
+                <p>OUR COLLECTION</p>
                 <h2>Featured Products</h2>
-                <p>Beautiful products for your beautiful home.</p>
+                <span>Discover our latest home essentials.</span>
             </div>
+
 
             <div class="product-grid">
 
-                <article class="product-card">
-                    <img
-                        src="https://images.unsplash.com/photo-1503602642458-232111445657?w=600"
-                        alt="Modern wooden chair">
-                    <h3>Modern Wooden Chair</h3>
-                    <p>Comfortable chair with a stylish design.</p>
-                    <p class="price">₹2,499</p>
-                    <button type="button">Add to Cart</button>
+                <!-- PRODUCT 1 -->
+                <article class="product-card flex flex-col rounded-2xl p-4 shadow-md h-full">
+
+                    <div class="product-media">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1503602642458-232111445657?w=600"
+                            alt="Modern comfortable wooden chair">
+
+                        <span class="sale-badge">SALE</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Modern Chair</h3>
+
+                        <p>
+                            Comfortable and stylish chair for your living room.
+                        </p>
+
+                        <div class="price">₹2,499</div>
+
+                        <button class="product-button mt-auto">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
                 </article>
 
-                <article class="product-card">
-                    <img
-                        src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=600"
-                        alt="Decorative table lamp">
-                    <h3>Elegant Table Lamp</h3>
-                    <p>Beautiful lighting for your bedroom.</p>
-                    <p class="price">₹1,299</p>
-                    <button type="button">Add to Cart</button>
+
+                <!-- PRODUCT 2 -->
+                <article class="product-card flex flex-col rounded-2xl p-4 shadow-md h-full">
+
+                    <div class="product-media">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600"
+                            alt="Elegant modern bedroom furniture">
+
+                        <span class="sale-badge">SALE</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Luxury Bed</h3>
+
+                        <p>
+                            Create a peaceful and relaxing bedroom.
+                        </p>
+
+                        <div class="price">₹12,999</div>
+
+                        <button class="product-button mt-auto">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
                 </article>
 
-                <article class="product-card">
-                    <img
-                        src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=600"
-                        alt="Decorative living room sofa">
-                    <h3>Luxury Sofa</h3>
-                    <p>Relax in comfort with our premium sofa.</p>
-                    <p class="price">₹14,999</p>
-                    <button type="button">Add to Cart</button>
+
+                <!-- PRODUCT 3 -->
+                <article class="product-card flex flex-col rounded-2xl p-4 shadow-md h-full">
+
+                    <div class="product-media">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=600"
+                            alt="Decorative home accessories and furniture">
+
+                        <span class="sale-badge">SALE</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Home Decor</h3>
+
+                        <p>
+                            Add beauty and personality to your home.
+                        </p>
+
+                        <div class="price">₹1,499</div>
+
+                        <button class="product-button mt-auto">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
                 </article>
 
-                <article class="product-card">
-                    <img
-                        src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?w=600"
-                        alt="Minimal decorative home accessory">
-                    <h3>Home Decor Set</h3>
-                    <p>Add a fresh look to your living space.</p>
-                    <p class="price">₹899</p>
-                    <button type="button">Add to Cart</button>
+
+                <!-- PRODUCT 4 -->
+                <article class="product-card flex flex-col rounded-2xl p-4 shadow-md h-full">
+
+                    <div class="product-media">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=600"
+                            alt="Contemporary living room sofa">
+
+                        <span class="sale-badge">SALE</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Comfort Sofa</h3>
+
+                        <p>
+                            Enjoy comfort with our premium modern sofa.
+                        </p>
+
+                        <div class="price">₹18,999</div>
+
+                        <button class="product-button mt-auto">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
                 </article>
 
             </div>
+
         </section>
 
-        <!-- Promotional Section -->
+
+        <!-- PROMO SECTION -->
         <section class="promo" id="about">
-            <div>
-                <p class="eyebrow">SPECIAL OFFER</p>
-                <h2>Make Your Home Special</h2>
-                <p>Get 20% off on your first purchase at UrbanNest.</p>
-                <a href="#products" class="btn">Explore Collection</a>
-            </div>
+
+            <h2>Make Your Space Special!</h2>
+
+            <p>
+                Upgrade your home with our beautiful furniture collection.
+                Find your favourite products at UrbanNest.
+            </p>
+
+            <a href="#products" class="promo-button">
+                Explore Collection
+            </a>
+
         </section>
 
     </main>
 
-    <!-- Footer -->
+
+    <!-- FOOTER -->
     <footer class="footer" id="contact">
+
         <div class="footer-grid">
 
-            <div>
-                <h3>UrbanNest.</h3>
-                <p>Making every home beautiful and comfortable.</p>
+            <div class="footer-column">
+
+                <h3>UrbanNest</h3>
+
+                <p>
+                    Making every home beautiful with modern
+                    furniture and stylish home essentials.
+                </p>
+
             </div>
 
-            <div>
+
+            <div class="footer-column">
+
                 <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Shop</a></li>
-                    <li><a href="#about">About Us</a></li>
-                </ul>
+
+                <a href="#home">Home</a>
+                <a href="#products">Shop</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+
             </div>
 
-            <div>
+
+            <div class="footer-column">
+
                 <h3>Contact Us</h3>
+
                 <p>Email: support@urbannest.com</p>
-                <p>Phone: +91 98765 43210</p>
+                <p>Phone: +91 9876543210</p>
+                <p>India</p>
+
             </div>
 
         </div>
 
-        <p class="copyright">
-            © 2026 UrbanNest. All rights reserved.
-        </p>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 UrbanNest. All Rights Reserved.
+            </p>
+
+        </div>
+
     </footer>
 
+
+    <!-- BACK TO TOP BUTTON -->
+    <a href="#top" class="back-to-top" aria-label="Back to top">
+        ↑
+    </a>
+
 </body>
+
 </html>
